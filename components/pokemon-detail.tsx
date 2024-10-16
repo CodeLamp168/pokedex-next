@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Pokemon } from "@/lib/utils"
 import { pokemontype } from "@/lib/utils"
+import { pokemonNotes } from "@/lib/utils"
 interface PokemonDetailProps {
   pokemon: Pokemon | null
 }
@@ -8,9 +9,11 @@ interface PokemonDetailProps {
 export function PokemonDetail({ pokemon }: PokemonDetailProps) {
   if (!pokemon) return null
 
+  const note = pokemonNotes[pokemon.id]
+
   return (
     <Card className="h-full">
-      <CardContent className="p-4 sm:p-6 flex  sm:flex-col flex-row justify-center items-center h-full">
+      <CardContent className="p-4 sm:p-6 flex  sm:flex-col flex-row justify-center items-center h-full relative">
         <img
           src={pokemon.sprites.other['official-artwork'].front_default}
           alt={pokemon.name}
@@ -38,7 +41,13 @@ export function PokemonDetail({ pokemon }: PokemonDetailProps) {
             <p>Weight: {pokemon.weight / 10} kg</p>
           </div>
         </div>
+        {note && (
+        <div className="relative -bottom-20 left-0 right-0 p-2 text-center  text-sm">
+          {note}
+        </div>
+      )}
       </CardContent>
+     
     </Card>
   )
 }

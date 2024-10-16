@@ -46,3 +46,10 @@ export const pokemontype = {
 	steel: '#B7B7CE',
 	fairy: '#D685AD',
 };
+
+export const pokemonNotes: { [key: number]: string } = {
+  // Add your custom notes here
+  1: "Bulbasaur is known for its loyalty.",
+  25: "Pikachu is the mascot of the Pokémon franchise.",
+  // Add more notes for other Pokémon IDs as needed
+}
