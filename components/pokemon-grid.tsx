@@ -25,8 +25,8 @@ interface PokemonGridProps {
 
 export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
   return (
-    <ScrollArea className="flex-grow">
-      <div className="grid grid-cols-2 gap-4">
+    <ScrollArea className="h-full w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4">
         {pokemons.map((pokemon) => (
           <Card
             key={pokemon.id}
@@ -39,7 +39,7 @@ export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
                 alt={pokemon.name}
                 className="w-24 h-24"
               />
-              <p className="mt-2 text-center capitalize">{pokemon.name}</p>
+              <p className="mt-2 text-center capitalize truncate w-full">{pokemon.name}</p>
             </CardContent>
           </Card>
         ))}
