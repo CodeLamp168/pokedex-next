@@ -49,7 +49,10 @@ export const pokemontype = {
 
 export const pokemonNotes: { [key: number]: string } = {
   // Add your custom notes here
-  1: "Bulbasaur is known for its loyalty.",
-  25: "Pikachu is the mascot of the Pokémon franchise.",
+  1:"Bulbasaur is known for its loyalty.",
+  25:"Pikachu is the mascot of the Pokémon franchise.",
+  134:"You are not cultured bro, you need to stop",
+  157:"Once a beloved member of the community, now a menace to society.",
+  224:"It had nothing to begin with, you expect it to come back after this?"
   // Add more notes for other Pokémon IDs as needed
 }
