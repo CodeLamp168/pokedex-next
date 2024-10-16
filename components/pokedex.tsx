@@ -4,27 +4,9 @@ import { useState, useEffect } from 'react'
 import { SearchInput } from './search-input'
 import { PokemonGrid } from './pokemon-grid'
 import { PokemonDetail } from './pokemon-detail'
+import { Pokemon } from '@/lib/utils'
 
 
-interface Pokemon {
-  id: number
-  name: string
-  sprites: {
-    front_default: string
-    other: {
-      'official-artwork': {
-        front_default: string
-      }
-    }
-  }
-  types: Array<{
-    type: {
-      name: string
-    }
-  }>
-  height: number
-  weight: number
-}
 
 export default function Pokedex() {
   const [pokemons, setPokemons] = useState<Pokemon[]>([])
