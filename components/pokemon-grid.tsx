@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea} from "@/components/ui/scroll-area"
 
 import { Pokemon } from "@/lib/utils"
 
