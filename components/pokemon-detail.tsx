@@ -10,10 +10,19 @@ export function PokemonDetail({ pokemon }: PokemonDetailProps) {
   if (!pokemon) return null
 
   const note = pokemonNotes[pokemon.id]
+  const mainType = pokemon.types[0].type.name
+  const typeColor = pokemontype[mainType as keyof typeof pokemontype] || '#777'
 
   return (
     <Card className="h-full">
       <CardContent className="p-4 sm:p-6 flex  flex-col justify-center items-center h-full relative">
+        <div className="absolute top-2 right-2 w-10 h-10 sm:w-20 sm:h-20 rounded-full flex items-center justify-center" style={{ backgroundColor: typeColor }}>
+          <img
+            src={`/types/${mainType}.svg`}
+            alt={`${mainType} type`}
+            className="w-6 h-6 sm:w-14 sm:h-14"
+          />
+        </div>
         <img
           src={pokemon.sprites.other['official-artwork'].front_default}
           alt={pokemon.name}
