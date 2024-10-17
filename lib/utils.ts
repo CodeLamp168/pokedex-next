@@ -5,6 +5,11 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export interface SearchInputProps {
+  searchTerm: string
+  setSearchTerm: (term: string) => void
+}
+
 
 export interface Pokemon {
   id: number

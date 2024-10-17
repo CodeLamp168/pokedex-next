@@ -1,9 +1,5 @@
 import { Input } from "@/components/ui/input"
-
-interface SearchInputProps {
-  searchTerm: string
-  setSearchTerm: (term: string) => void
-}
+import { SearchInputProps } from "@/lib/utils"
 
 export function SearchInput({ searchTerm, setSearchTerm }: SearchInputProps) {
   return (
