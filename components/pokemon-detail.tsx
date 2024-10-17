@@ -13,7 +13,7 @@ export function PokemonDetail({ pokemon }: PokemonDetailProps) {
 
   return (
     <Card className="h-full">
-      <CardContent className="p-4 sm:p-6 flex  sm:flex-col flex-row justify-center items-center h-full relative">
+      <CardContent className="p-4 sm:p-6 flex  flex-col justify-center items-center h-full relative">
         <img
           src={pokemon.sprites.other['official-artwork'].front_default}
           alt={pokemon.name}
@@ -42,7 +42,7 @@ export function PokemonDetail({ pokemon }: PokemonDetailProps) {
           </div>
         </div>
         {note && (
-        <div className="relative -bottom-20 left-0 right-0 p-2 text-center  text-sm">
+        <div className="relative -bottom-2 left-0 right-0 p-2 text-center  text-sm">
           {note}
         </div>
       )}
