@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Pokedex from "@/components/pokedex";
 
 export default function Home() {
