@@ -31,9 +31,7 @@ export default function Pokedex() {
     pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
-  const handleSelectPokemon = (pokemon: Pokemon) => {
-    setSelectedPokemon(pokemon)
-  }
+
 
   return (
     <div className="flex justify-center items-start min-h-screen p-4">
