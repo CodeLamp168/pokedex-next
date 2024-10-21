@@ -10,12 +10,14 @@ interface PokemonGridProps {
   onSelectPokemon: (pokemon: Pokemon) => void
 }
 
+const shadowStyle = '0, 4px 10px rgba(0, 0, 0, 0.1), 0 -4px 10px rgba(0, 0, 0, 0.1)'
+
 
 
 export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
   return (
-    <ScrollArea className="h-full w-full">
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4">
+    <ScrollArea className="h-full w-full border-b-2 border-[#ec4127] pb-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {pokemons.map((pokemon) => {
         const mainType = pokemon.types[0].type.name;
         const typeColor = pokemontype[mainType as keyof typeof pokemontype] || '#777';

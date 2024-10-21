@@ -36,7 +36,7 @@ export default function Pokedex() {
   }
 
   return (
-    <div className="flex justify-center items-start min-h-screen bg-gray-100 p-4">
+    <div className="flex justify-center items-start min-h-screen p-4">
       <div className="w-full max-w-7xl flex flex-col lg:flex-row-reverse">
         <div className="lg:w-1/2 lg:pl-4 mb-4 lg:mb-0">
           <PokemonDetail pokemon={selectedPokemon} />
