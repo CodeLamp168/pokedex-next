@@ -30,6 +30,7 @@ export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
             onClick={() => onSelectPokemon(pokemon)}
           >
             <CardContent className="p-4 flex flex-col items-center relative overflow-hidden">
+        
               <div className="absolute top-2 right-2 w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: typeColor }}>
                 <img
                   src={`/types/${mainType}.svg`}
@@ -44,10 +45,11 @@ export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
                   borderRadius: 'inherit',
                 }}
               />
+                  <div className="absolute w-24 h-24 rounded-full bg-gray-200 bg-opacity-50 z-0"></div>
               <img
                 src={pokemon.sprites.front_default}
                 alt={pokemon.name}
-                className="w-24 h-24"
+                className="w-24 h-24 z-10"
               />
               <p className="mt-2 text-center capitalize truncate w-full">{pokemon.name}</p>
             </CardContent>
