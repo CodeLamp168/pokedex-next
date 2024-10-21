@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ScrollArea} from "@/components/ui/scroll-area"
 
 import { Pokemon } from "@/lib/utils"
-
 import { pokemontype } from "@/lib/utils"
+
 
 interface PokemonGridProps {
   pokemons: Pokemon[]
@@ -25,7 +25,7 @@ export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
             key={pokemon.id}
             className="cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out"
             style={{
-              '--hover-border-color': typeColor,
+              '--hover-border-color': typeColor, 
             } as React.CSSProperties}
             onClick={() => onSelectPokemon(pokemon)}
           >
@@ -42,10 +42,10 @@ export function PokemonGrid({ pokemons, onSelectPokemon }: PokemonGridProps) {
                 className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out"
                 style={{
                   boxShadow: `inset 0 0 0 3px var(--hover-border-color)`,
-                  borderRadius: 'inherit',
+                  borderRadius: '8px',
                 }}
               />
-                  <div className="absolute w-24 h-24 rounded-full bg-gray-200 bg-opacity-50 z-0"></div>
+                  <div className="absolute w-24 h-24 rounded-full  bg-opacity-20 z-0" style={{backgroundColor : typeColor , opacity: 0.3 }}></div>
               <img
                 src={pokemon.sprites.front_default}
                 alt={pokemon.name}

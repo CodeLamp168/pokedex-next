@@ -61,3 +61,6 @@ export const pokemonNotes: { [key: number]: string } = {
   224:"It had nothing to begin with, you expect it to come back after this?"
   // Add more notes for other Pokémon IDs as needed
 }
+
+
+
