@@ -15,20 +15,21 @@ export function PokemonDetail({ pokemon }: PokemonDetailProps) {
 
   return (
     <Card className="h-full">
-      <CardContent className="p-4 sm:p-6 flex  flex-col justify-center items-center h-full relative">
+      <CardContent className="p-4 sm:p-6 flex  flex-col justify-center items-center h-full relative overflow-hidden">
         <div className="absolute top-2 right-2 w-10 h-10 sm:w-20 sm:h-20 rounded-full flex items-center justify-center" style={{ backgroundColor: typeColor }}>
           <img
             src={`/types/${mainType}.svg`}
             alt={`${mainType} type`}
-            className="w-6 h-6 sm:w-14 sm:h-14"
+            className="w-6 h-6 sm:w-12 sm:h-12"
           />
         </div>
+        <div className="absolute w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full  bg-opacity-20 z-0 -bottom-20 -left-20" style={{backgroundColor : typeColor , opacity: 0.3 }}></div>
         <img
           src={pokemon.sprites.other['official-artwork'].front_default}
           alt={pokemon.name}
-          className="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 object-contain"
+          className="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 object-contain z-10 "
         />
-        <div className="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left">
+        <div className="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left z-10">
           <h2 className="text-2xl font-bold capitalize">{pokemon.name}</h2>
           <p className="text-gray-600">#{pokemon.id.toString().padStart(3, '0')}</p>
           <div className="mt-2 flex flex-wrap justify-center sm:justify-start gap-2">
