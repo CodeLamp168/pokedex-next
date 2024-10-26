@@ -1,13 +1,30 @@
 # Pokedex Project
+```
+This md was revamped with some ai. Please ignore the obvious corporate glazing.
+```
+## Desktop
+![Pokedex Desktop](public/desktopdisplay.jpg)
 
-This project is a modern, responsive Pokedex application built with Next.js, React, and Tailwind CSS. It provides an interactive interface for users to explore and search through a collection of Pokemon.
+## Mobile
+![Pokedex Mobile](public/mobiledisplay.jpg)
+
+
+## Important Takeaways 
+ An old [PokeAPI](https://pokeapi.co/) centered project, to better understand API key usage, never bothered to finish for a while but decided to do it now. 
+
+ - Decided to move this old project to NEXT JS and maintain the original desired layout
+ - Tested v0 for converting layout design from vanilla css to tailwind (it worked)
+
+
 
 ## Technologies Utilized
 
 - **Next.js**: React framework for server-side rendering and routing
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development
 - **Vercel**: Platform for deployment and hosting
+- **v0**: Vercel's Ai developer assistant.
 - **shadcn/ui**: Re-usable components built with Radix UI and Tailwind CSS
+- **PokeApi**: Accessible database of the "entire" pokemon list
 
 ## Key Features
 
@@ -141,7 +158,7 @@ This code demonstrates the use of Next.js font optimization features and applies
 
 ## Conclusion
 
-This Pokedex project showcases the power of combining Next.js, Tailwind CSS, and shadcn/ui to create a modern, responsive, and interactive web application. It leverages server-side rendering, efficient styling, and reusable components to deliver a seamless user experience for exploring Pokemon data.
+This Pokedex project showcases the power of combining Next.js, Tailwind CSS, and shadcn/ui to create a modern (not really), responsive, and interactive web application (just a search option). It leverages server-side rendering, efficient styling (i will forget some of the structure later), and reusable components to deliver a seamless user experience for exploring Pokemon data.
 ```
 
-This revised `about.md` now includes specific code snippets with explanations, highlighting how different technologies are used throughout the project. It also includes a new section at the beginning that explicitly lists the main technologies utilized in the project.
+This md was revamped with some ai. Please ignore the obvious corporate glazing.
